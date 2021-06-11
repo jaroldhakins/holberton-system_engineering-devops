@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a
+vdir -a /.. vdir -a /boot
