@@ -1,0 +1,2 @@
+#start apache inside docker
+service apache2 start
