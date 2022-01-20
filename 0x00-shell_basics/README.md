@@ -1,3 +1,3 @@
 # 0-current_working_directory
 
-second commit
+* Here are the most basics linux commands, and my first scripts
