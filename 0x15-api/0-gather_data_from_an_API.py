@@ -2,8 +2,8 @@
 """
 script that, for a given employee ID, returns information about his/her
 """
-from sys import argv
 import requests
+from sys import argv
 
 if __name__ == '__main__':
     url = 'https://jsonplaceholder.typicode.com/'
