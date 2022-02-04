@@ -24,4 +24,4 @@ if __name__ == '__main__':
             .format(employee, completed_tasks, all_tasks)
             )
         for j in title:
-            print("\t{}".format(j))
+            print("\t {}".format(j))
