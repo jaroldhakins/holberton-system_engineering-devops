@@ -13,14 +13,15 @@ if __name__ == '__main__':
     completed_tasks = 0
     all_tasks = 0
     title = []
-    for i in req2:
-        if i.get("completed") is True:
-            completed_tasks += 1
-            title.append(i.get("title"))
-        all_tasks += 1
-    print(
-        "Employee {} is done with tasks({}/{}):"
-        .format(employee, completed_tasks, all_tasks)
-        )
-    for j in title:
-        print("\t{}".format(j))
+    if employee is not None:
+        for i in req2:
+            if i.get("completed") is True:
+                completed_tasks += 1
+                title.append(i.get("title"))
+            all_tasks += 1
+        print(
+            "Employee {} is done with tasks({}/{}):"
+            .format(employee, completed_tasks, all_tasks)
+            )
+        for j in title:
+            print("\t{}".format(j))
