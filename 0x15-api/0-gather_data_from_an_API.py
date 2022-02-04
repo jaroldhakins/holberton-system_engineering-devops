@@ -8,7 +8,7 @@ from sys import argv
 if __name__ == '__main__':
     url = 'https://jsonplaceholder.typicode.com/'
     req1 = requests.get(url + "users/" + argv[1])
-    employee_name = req1.json().get("name")
+    employee = req1.json().get("name")
     req2 = requests.get(url + 'todos?userId=' + argv[1]).json()
     completed_tasks = 0
     all_tasks = 0
@@ -20,7 +20,7 @@ if __name__ == '__main__':
         all_tasks += 1
     print(
         "Employee {} is done with tasks({}/{}):"
-        .format(employee_name, completed_tasks, all_tasks)
+        .format(employee, completed_tasks, all_tasks)
         )
     for j in title:
         print("\t{}".format(j))
