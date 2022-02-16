@@ -13,8 +13,7 @@ def top_ten(subreddit):
         (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
     }
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    p = {'limit': 10}
-    result = requests.get(url, headers=headers, p=p, allow_redirects=False)
+    result = requests.get(url, headers=headers, allow_redirects=False)
     if result.status_code == 200:
         titles_ = result.json().get('data').get('children')
         for title_ in titles_:
